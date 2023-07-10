@@ -20,6 +20,9 @@
     font-family: 'Open Sans', sans-serif;
     color: #efefee;
     line-height: 1.4;
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   }
   
   .head {
@@ -95,22 +98,352 @@
   .navbar-nav-right li:nth-child(2) {
     margin: 0 5px;
   }
+  /* Search Bar */
+.navbar .search-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar .search-input {
+  width: 200px;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+}
+
+.navbar .search-button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Mobile device with 6.5 inches screen */
+@media (max-width: 428px) {
+
+  .cards {
+    width: 90%; /* Adjust the width for mobile devices */
+    margin-left: 5%; /* Adjust the left margin for mobile devices */
+    margin-top: 5%; /* Adjust the top margin for mobile devices */
+    padding: 15px; /* Adjust the padding for mobile devices */
+  }
+
+  .cards .date {
+    font-size: 14px; /* Adjust the font size for mobile devices */
+  }
+
+  .cards .title {
+    font-size: 32px; /* Adjust the font size for mobile devices */
+  }
+
+  .cards .bio {
+    font-size: 20px; /* Adjust the font size for mobile devices */
+  }
+
+  .cards .read-more {
+    padding: 6px 12px; /* Adjust the padding for mobile devices */
+  }
+
+  .footer {
+    height: auto; /* Adjust height to fit content on mobile devices */
+  }
+
+  .footer-container {
+    padding-bottom: 15px; /* Increase bottom padding on mobile devices */
+  }
+
+  .social {
+    justify-content: center; /* Center the social icons horizontally */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .social img {
+    width: 25px; /* Decrease the size of social icons on mobile devices */
+    height: 25px;
+    margin: 3px; /* Decrease the margin between social icons */
+  }
+
+  .footer-text {
+    font-size: 14px; /* Adjust the font size for mobile devices */
+  }
+
+  .navbar li {
+    margin: 0 10px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 18px;
+  }
+
+  .navbar .search-input {
+    width: 160px;
+    padding: 4px;
+  }
+
+  .navbar .search-button {
+    padding: 4px 8px;
+  }
+}
+
+/* Mobile device with 6 inches screen */
+@media (max-width: 375px) {
+
+  .cards {
+    width: 90%; /* Adjust the width for mobile devices */
+    margin-left: 5%; /* Adjust the left margin for mobile devices */
+    margin-top: 5%; /* Adjust the top margin for mobile devices */
+    padding: 15px; /* Adjust the padding for mobile devices */
+  }
+
+  .cards .date {
+    font-size: 14px; /* Adjust the font size for mobile devices */
+  }
+
+  .cards .title {
+    font-size: 32px; /* Adjust the font size for mobile devices */
+  }
+
+  .cards .bio {
+    font-size: 20px; /* Adjust the font size for mobile devices */
+  }
+
+  .cards .read-more {
+    padding: 6px 12px; /* Adjust the padding for mobile devices */
+  }
+
+  .footer {
+    height: auto; /* Adjust height to fit content on mobile devices */
+  }
+
+  .footer-container {
+    padding-bottom: 15px; /* Increase bottom padding on mobile devices */
+  }
+
+  .social {
+    justify-content: center; /* Center the social icons horizontally */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .social img {
+    width: 25px; /* Decrease the size of social icons on mobile devices */
+    height: 25px;
+    margin: 3px; /* Decrease the margin between social icons */
+  }
+
+  .footer-text {
+    font-size: 14px; /* Adjust the font size for mobile devices */
+  }
+
+  .navbar li {
+    margin: 0 8px;
+  }
+
+  .btn {
+    padding: 8px 14px;
+    font-size: 16px;
+  }
+
+  .navbar .search-input {
+    width: 140px;
+    padding: 4px;
+  }
+
+  .navbar .search-button {
+    padding: 4px 6px;
+  }
+}
+
+/* Common mobile device media queries */
+@media (max-width: 768px) {
+
+  .cards {
+    width: 90%; /* Adjust the width for mobile devices */
+    margin-left: 5%; /* Adjust the left margin for mobile devices */
+    margin-top: 5%; /* Adjust the top margin for mobile devices */
+    padding: 15px; /* Adjust the padding for mobile devices */
+  }
+
+  .cards .date {
+    font-size: 14px; /* Adjust the font size for mobile devices */
+  }
+
+  .cards .title {
+    font-size: 32px; /* Adjust the font size for mobile devices */
+  }
+
+  .cards .bio {
+    font-size: 20px; /* Adjust the font size for mobile devices */
+  }
+
+  .cards .read-more {
+    padding: 6px 12px; /* Adjust the padding for mobile devices */
+  }
+
+  .footer {
+    height: auto; /* Adjust height to fit content on mobile devices */
+  }
+
+  .footer-container {
+    padding-bottom: 15px; /* Increase bottom padding on mobile devices */
+  }
+
+  .social {
+    justify-content: center; /* Center the social icons horizontally */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+
+  .social img {
+    width: 25px; /* Decrease the size of social icons on mobile devices */
+    height: 25px;
+    margin: 3px; /* Decrease the margin between social icons */
+  }
+
+  .footer-text {
+    font-size: 14px; /* Adjust the font size for mobile devices */
+  }
+
+  .navbar li {
+    margin: 0 8px;
+  }
+
+  .btn {
+    padding: 8px 14px;
+    font-size: 16px;
+  }
+
+  .navbar .search-input {
+    width: 140px;
+    padding: 4px;
+  }
+
+  .navbar .search-button {
+    padding: 4px 6px;
+  }
+}
+
+/* Tablet devices */
+@media (max-width: 960px) {
+
+  .footer-container {
+    padding-right: 15px; /* Increase right padding on tablet devices */
+    padding-left: 15px; /* Increase left padding on tablet devices */
+  }
+
+  .footer-text {
+    font-size: 16px; /* Adjust the font size for tablet devices */
+  }
+
+  .navbar li {
+    margin: 0 12px;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 18px;
+  }
+
+  .navbar .search-input {
+    width: 180px;
+    padding: 6px;
+  }
+
+  .navbar .search-button {
+    padding: 6px 10px;
+  }
+
+  .cards {
+    width: 90%; /* Adjust the width for tablet devices */
+    margin-left: 5%; /* Adjust the left margin for tablet devices */
+    margin-top: 5%; /* Adjust the top margin for tablet devices */
+  }
+}
+
+/* Large desktop devices */
+@media (min-width: 1440px) {
+
+  .cards {
+    width: 70%; /* Adjust the width for large desktop devices */
+    margin-left: 15%; /* Adjust the left margin for large desktop devices */
+    margin-top: 3%; /* Adjust the top margin for large desktop devices */
+    padding: 30px; /* Adjust the padding for large desktop devices */
+  }
+
+  .cards .date {
+    font-size: 18px; /* Adjust the font size for large desktop devices */
+  }
+
+  .cards .title {
+    font-size: 48px; /* Adjust the font size for large desktop devices */
+  }
+
+  .cards .bio {
+    font-size: 28px; /* Adjust the font size for large desktop devices */
+  }
+
+  .cards .read-more {
+    padding: 10px 20px; /* Adjust the padding for large desktop devices */
+  }
+
+  .footer-container {
+    padding-right: 50px; /* Increase right padding on large desktop devices */
+    padding-left: 50px; /* Increase left padding on large desktop devices */
+  }
+
+  .footer-text {
+    font-size: 18px; /* Adjust the font size for large desktop devices */
+  }
+
+  .navbar li {
+    margin: 0 20px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 22px;
+  }
+
+  .navbar .search-input {
+    width: 220px;
+    padding: 8px;
+  }
+
+  .navbar .search-button {
+    padding: 8px 12px;
+  }
+}
   
   /* footer and social */
   .footer {
-    position: fixed;
     left: 0;
+    height: 13%;
     bottom: 0;
     width: 100%;
     background-color: #efefee;
     text-align: center;
+    z-index: 1;
   }
   
-  .container {
+  .footer-container {
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 30px 30px;
   }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Change to center horizontally on mobile devices */
+    margin-left: 0; /* Remove left margin on mobile devices */
+  }
+  
   
   .social img {
     width: 35px;
@@ -122,54 +455,51 @@
     text-decoration: none;
   }
   
-  .divider {
-    width: 95%;
-    height: 1px;
-    background-color: #ccc;
-    margin: 40px auto;
-  }
-  
+
   .footer-text{
     margin-top: 7px;
     color:#171616;
   }
 
+
   /* article element */
-table {
-  display: flex;
+/* Common styles for both PC and mobile */
+.cards {
+  flex-grow: 1;
+  margin-bottom: 0;
   flex-direction: column;
   align-items: left;
-  justify-content: center;
   width: 80%;
-  margin: 0;
-  /* margin-top: 0%; */
-  margin-left: 15%;
-  margin-top: 3%;
-  background: none;
+  margin-left: 10%;
+  margin-top:1%;
+  background: #efefee;
   padding: 20px;
-  /* margin-bottom: 20px; */
 }
 
-table .date {
+.cards .date {
   font-size: 16px;
   padding: 3px;
   font-family: 'Space Mono', sans-serif;
-  font-weight:700;
+  font-weight: 580;
   color: #171616;
-  margin-bottom: 0px; /* Added */
+  margin-bottom: 0;
 }
 
-table .title {
+.cards .title {
   font-family: 'Inter', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   padding: 3px;
-  /* font-weight: 700; */
   margin-top: 10px;
   margin-bottom: 10px;
   color: #171616;
 }
-
-table .bio {
+.card-text{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  color: #171717;
+  font-size: 18px;
+}
+.cards .bio {
   color: #171616;
   font-size: 24px;
   padding: 3px;
@@ -177,11 +507,38 @@ table .bio {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.article .read-more {
+.cards .read-more {
   display: inline-block;
   padding: 8px 16px;
-  background-color:none ;
+  background-color: none;
   color: #171616;
   text-decoration: none;
+  font-family: 'IBM Plex Sans', sans-serif;
   border-radius: 4px;
+}
+
+/* about me page css */
+.about-title{
+  font-family: 'Inter', sans-serif;
+  font-size: 37px;
+  padding: 9px;
+  text-align: center;
+  color: #171616;
+}
+.about-p{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  color: #171717;
+  font-size: 18px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.about-date{
+  font-size: 16px;
+  padding: 3px;
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 580;
+  text-align: right;
+  color: #171616;
+  margin-bottom: 0;
 }
