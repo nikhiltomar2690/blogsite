@@ -2,7 +2,7 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.23.0/firebas
 import { getFirestore, collection, getDocs , query, orderBy,where} from 'https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js';
 
 const firebaseConfig = {
-  apiKey: "",
+  apiKey: "AIzaSyAY-ChTNQK9aqpB4T4uXpG2QMggrZHxHtk",
   authDomain: "cbid-1a433.firebaseapp.com",
   projectId: "cbid-1a433",
   storageBucket: "cbid-1a433.appspot.com",
